@@ -1,0 +1,61 @@
+# ------------------------------
+# 🐍 Ignore virtualenv folders
+# ------------------------------
+env/
+venv/
+**/env/
+**/venv/
+**/.env/
+**/.venv/
+
+# ------------------------------
+# 🌐 Frontend (Next.js / Node)
+# ------------------------------
+frontend/node_modules/
+frontend/.next/
+frontend/.turbo/
+frontend/.eslintcache
+frontend/out/
+frontend/.env.production
+frontend/.env.development
+
+# ------------------------------
+# 🐍 Backend (Django / Python)
+# ------------------------------
+backend/__pycache__/
+backend/**/*.py[cod]
+backend/*.sqlite3
+backend/*.db
+backend/*.log
+backend/.env.local
+
+# Pytest / coverage
+backend/.pytest_cache/
+backend/.mypy_cache/
+backend/htmlcov/
+backend/.coverage
+
+# Optional: ignore compiled migrations
+backend/**/migrations/__pycache__/
+
+# ------------------------------
+# 🐳 Docker / DB
+# ------------------------------
+pgdata/
+*.pid
+*.sock
+
+# ------------------------------
+# 💻 Editor/OS files
+# ------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ------------------------------
+# 📝 General env & secrets
+# ------------------------------
+*.secret
+
+
